@@ -6,21 +6,16 @@ class SplashScreen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      return Scaffold(
-      body: Column(
-          // Todo:
-          // karna akan membuat multiple widget
-          // maka membuat children yang bisa menampung banyak
-          //widget children
-
-          //membuat image bulat
-          //membuat title dengan warna hitam
-          //membuat subtitle
-          //membuat 3 bullet kecil
-          //mulai dari warna terang awal
-          //membuat button continue
+      body: Center( // image di tengah layar
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center, // vertikal tengah
+          crossAxisAlignment: CrossAxisAlignment.center, // horizontal tengah
           children: [
-          SizedBox(height:50),
-          Container (
+            Wrap(
+            alignment: WrapAlignment.center, // tengah horizontal
+            children: [
+            SizedBox(height:50),
+            Container (
             width : 250, 
             height : 250,
             decoration: BoxDecoration(
@@ -30,6 +25,9 @@ class SplashScreen1 extends StatelessWidget {
           //tambahan untuk widget lainnya
           ],
         ),
-     );
+        ]
+      ),
+      ),
+    );
   }
 }

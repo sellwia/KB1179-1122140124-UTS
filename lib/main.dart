@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return 
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Nim : 1122140124, Selly Dwi Kurnia",
       theme: ThemeData(
         useMaterial3: true,
