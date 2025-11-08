@@ -112,7 +112,9 @@ class Login extends StatelessWidget {
             ],
             ),
           ),
-          
+
+             SizedBox(height: 20), 
+
           //lupa password
 
           Align(
@@ -123,6 +125,8 @@ class Login extends StatelessWidget {
                ),
                ),
               ),
+
+             SizedBox(height: 20), 
 
           // button login
 
@@ -141,6 +145,20 @@ class Login extends StatelessWidget {
               'Login',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
+            ),
+
+             SizedBox(height: 10), 
+
+            Row(
+              children: [
+                Expanded(child: Divider(color: Colors.grey[300])),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Text('atau',
+                  style: TextStyle(color: Colors.grey[600])),
+                  ),
+                Expanded(child: Divider(color: Colors.grey[300])),
+              ],
             ),
           ],
         ),
