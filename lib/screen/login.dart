@@ -39,7 +39,7 @@ class Login extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
 
-            SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
+            SizedBox(height: 20), //jarak 20 antara icon dan teks
 
           TextField(
             keyboardType: TextInputType.emailAddress,
@@ -50,7 +50,17 @@ class Login extends StatelessWidget {
             ),
           ),
 
-            
+             SizedBox(height: 10), 
+
+          TextField(
+            keyboardType: TextInputType.emailAddress,
+            decoration: InputDecoration(
+            labelText: 'Password',
+            hintText : 'Masukkan Password Anda',
+            border: OutlineInputBorder(),
+            ),
+          ),
+           
             ],
           ),
         ),
