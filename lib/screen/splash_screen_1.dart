@@ -42,8 +42,44 @@ class SplashScreen1 extends StatelessWidget {
                 fontSize: 15.0,
                 color: Colors.amber,
                 fontWeight: FontWeight.bold,
-              )
               ),
+              textAlign: TextAlign.center,
+              ),
+
+          SizedBox(height: 30),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center, // vertikal tengah
+                children: [
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color.fromARGB(255, 242, 152, 8),
+              ),
+          ),
+         
+          SizedBox(width: 10),
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color.fromARGB(255, 192, 146, 47),
+              ),
+          ),
+          SizedBox(width: 10),                  
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color.fromARGB(255, 160, 112, 40),
+              ),
+          ),
+          SizedBox(width: 10),                ],
+                ),
           //tambahan untuk widget lainnya
           ],
         ),
