@@ -6,8 +6,12 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Container(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center, // vertikal tengah
+          crossAxisAlignment: CrossAxisAlignment.center, // horizontal tengah
+        children: [
+          Container(
           padding: const EdgeInsets.all(20.0),
           child: const Column(
             children: [
@@ -35,9 +39,10 @@ class Login extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             ],
-
           ),
         ),
+        ],
+      ),
       ),
     );
   }
