@@ -12,8 +12,8 @@ class Login extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center, // horizontal tengah
         children: [
           Container(
-          padding: const EdgeInsets.all(20.0),
-          child: const Column(
+          padding:  EdgeInsets.all(20.0),
+          child: Column(
             children: [
               SizedBox(height: 10),
               Icon(
@@ -46,7 +46,14 @@ class Login extends StatelessWidget {
             decoration: InputDecoration(
             labelText: 'Email',
             hintText : 'Masukkan Email Anda',
-            border: OutlineInputBorder(),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(color: Colors.grey[300]!)
+            ),
+            prefixIcon: Icon(
+                        Icons.email_outlined,
+                          size: 25.0,
+                        ),
             ),
           ),
 
