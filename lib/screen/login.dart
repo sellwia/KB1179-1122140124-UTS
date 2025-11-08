@@ -38,6 +38,15 @@ class Login extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+
+            SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
+
+          TextField(
+            keyboardType: TextInputType.emailAddress,
+            decoration: InputDecoration(labelText: 'email'),
+          ),
+
+            
             ],
           ),
         ),
