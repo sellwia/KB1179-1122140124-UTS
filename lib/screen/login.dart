@@ -77,14 +77,21 @@ class Login extends StatelessWidget {
             decoration: InputDecoration(
             labelText: 'Password',
             hintText : 'Masukkan Password Anda',
+
+            //garis kolom
+
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.0),
             ),
+
+            //line abu-abu
 
            enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
               borderSide: BorderSide(color: Colors.grey[300]!)
             ),
+
+            //line biru
 
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
@@ -93,6 +100,8 @@ class Login extends StatelessWidget {
               width: 2
               ),
             ),
+
+            //icon 
             prefixIcon: const Icon(
                         Icons.lock_outline),
             suffixIcon: const Icon(
@@ -100,11 +109,11 @@ class Login extends StatelessWidget {
                         ),
                         ),
             ],
-            
             ),
-            
           ),
           
+          //lupa password
+
           Align(
               alignment: Alignment.centerRight,
               child: TextButton(onPressed: (){},
@@ -114,6 +123,24 @@ class Login extends StatelessWidget {
                ),
               ),
 
+          // button login
+
+          ElevatedButton(
+            onPressed: () {}, 
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue[700],
+              foregroundColor: Colors.white,
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadiusGeometry.circular(12)
+              ),
+              elevation: 2,
+            ),
+            child: const Text(
+              'Login',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
         ),
     ),
