@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uts_1122140124/screen/login.dart';
 
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3 ({super.key});
@@ -20,7 +21,7 @@ class SplashScreen3 extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.amber,
               image: DecorationImage(
-                image: AssetImage("assets/images/pict 1.jpeg"),
+                image: AssetImage("assets/images/pict 3.jpeg"),
                 fit: BoxFit.cover,
                 ),
               ),
@@ -38,7 +39,7 @@ class SplashScreen3 extends StatelessWidget {
           SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
 
           Text(
-            "Level 21 Unlocked! - Ready to Win, Shine, and make it mine - .",
+            "Born to stand out, built to rise. Welcome to my 21st era.",
               style: TextStyle(
                 fontSize: 15.0,
                 color: Colors.amber,
@@ -57,7 +58,7 @@ class SplashScreen3 extends StatelessWidget {
                     height: 10,
                     decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 242, 152, 8),
+                    color: Color.fromARGB(255, 55, 52, 48),
               ),
           ),
          
@@ -76,7 +77,7 @@ class SplashScreen3 extends StatelessWidget {
                     height: 10,
                     decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 55, 52, 48),
+                    color: Color.fromARGB(255, 242, 152, 8),
               ),
           ),
           SizedBox(width: 10),                ],
@@ -87,15 +88,20 @@ class SplashScreen3 extends StatelessWidget {
                     height: 30,
                     width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: (){
+                  onPressed: () {
+                    //route : material page route
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(builder: (context) => Login()),
+                      (Route<dynamic> route) => false,
+                    );
                     // panggil slide selanjutnya
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 16, 237, 4)
+                    backgroundColor: Color.fromARGB(255, 16, 237, 4),
                   ),
-                  child: Text("Continue", style: TextStyle(fontSize: 14),
-                  ),
-                  ),
+                    child: Text("Login", style: TextStyle(fontSize: 14)),
+                ),
                   ),
                   margin: EdgeInsets.only(left: 40, right: 40),
                 )
