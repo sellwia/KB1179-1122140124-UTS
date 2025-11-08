@@ -66,7 +66,7 @@ class SplashScreen1 extends StatelessWidget {
                     height: 10,
                     decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 192, 146, 47),
+                    color: Color.fromARGB(255, 117, 98, 57),
               ),
           ),
           SizedBox(width: 10),                  
@@ -75,11 +75,25 @@ class SplashScreen1 extends StatelessWidget {
                     height: 10,
                     decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 160, 112, 40),
+                    color: Color.fromARGB(255, 55, 52, 48),
               ),
           ),
           SizedBox(width: 10),                ],
                 ),
+                
+          SizedBox(height: 30),
+                Container(
+                  child: ElevatedButton(
+                    onPressed: (){
+                    // panggil slide selanjutnya
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 16, 237, 4)
+                  ),
+                  child: Text("Continue", style: TextStyle(fontSize: 14),
+                  ),
+                  ),
+                )
           //tambahan untuk widget lainnya
           ],
         ),
