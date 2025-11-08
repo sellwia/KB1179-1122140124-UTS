@@ -80,9 +80,11 @@ class SplashScreen1 extends StatelessWidget {
           ),
           SizedBox(width: 10),                ],
                 ),
-                
           SizedBox(height: 30),
                 Container(
+                  child : SizedBox(
+                    height: 30,
+                    width: double.infinity,
                   child: ElevatedButton(
                     onPressed: (){
                     // panggil slide selanjutnya
@@ -93,6 +95,8 @@ class SplashScreen1 extends StatelessWidget {
                   child: Text("Continue", style: TextStyle(fontSize: 14),
                   ),
                   ),
+                  ),
+                  margin: EdgeInsets.only(left: 40, right: 40),
                 )
           //tambahan untuk widget lainnya
           ],
