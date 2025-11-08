@@ -8,8 +8,9 @@ class Login extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center, // vertikal tengah
-          crossAxisAlignment: CrossAxisAlignment.center, // horizontal tengah
+         // mainAxisAlignment: MainAxisAlignment.center, // vertikal tengah
+          //crossAxisAlignment: CrossAxisAlignment.center, // horizontal tengah
+          crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
           padding:  EdgeInsets.all(20.0),
