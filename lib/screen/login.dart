@@ -46,12 +46,22 @@ class Login extends StatelessWidget {
             decoration: InputDecoration(
             labelText: 'Email',
             hintText : 'Masukkan Email Anda',
+
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12.0),
+            ),
+
+           enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(color: Colors.grey[300]!)
+            ),
+
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
               borderSide: BorderSide(
               color: Colors.blue[700]!,
               width: 2
-              )
+              ),
             ),
             prefixIcon: Icon(
                         Icons.email_outlined,
@@ -63,20 +73,50 @@ class Login extends StatelessWidget {
              SizedBox(height: 10), 
 
           TextField(
-            keyboardType: TextInputType.emailAddress,
+            obscureText: true,
             decoration: InputDecoration(
             labelText: 'Password',
             hintText : 'Masukkan Password Anda',
-            border: OutlineInputBorder(),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12.0),
             ),
-          ),
-           
+
+           enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(color: Colors.grey[300]!)
+            ),
+
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(
+              color: Colors.blue[700]!,
+              width: 2
+              ),
+            ),
+            prefixIcon: const Icon(
+                        Icons.lock_outline),
+            suffixIcon: const Icon(
+                          Icons.visibility_outlined),
+                        ),
+                        ),
             ],
+            
+            ),
+            
           ),
+          
+          Align(
+              alignment: Alignment.centerRight,
+              child: TextButton(onPressed: (){},
+               child: Text('Lupa Password?',
+               style: TextStyle(color: Colors.blue[700],fontSize: 14),
+               ),
+               ),
+              ),
+
+          ],
         ),
-        ],
-      ),
-      ),
+    ),
     );
   }
 }
