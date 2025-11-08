@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uts_1122140124/screen/splash_screen_3.dart';
 
 class SplashScreen2 extends StatelessWidget {
   const SplashScreen2({super.key});
@@ -87,15 +88,19 @@ class SplashScreen2 extends StatelessWidget {
                     height: 30,
                     width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: (){
+                  onPressed: () {
+                    //route : material page route
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SplashScreen3()),
+                    );
                     // panggil slide selanjutnya
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 16, 237, 4)
+                    backgroundColor: Color.fromARGB(255, 16, 237, 4),
                   ),
-                  child: Text("Continue", style: TextStyle(fontSize: 14),
-                  ),
-                  ),
+                    child: Text("Continue", style: TextStyle(fontSize: 14)),
+                ),
                   ),
                   margin: EdgeInsets.only(left: 40, right: 40),
                 )
