@@ -46,9 +46,12 @@ class Login extends StatelessWidget {
             decoration: InputDecoration(
             labelText: 'Email',
             hintText : 'Masukkan Email Anda',
-            enabledBorder: OutlineInputBorder(
+            focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: BorderSide(color: Colors.grey[300]!)
+              borderSide: BorderSide(
+              color: Colors.blue[700]!,
+              width: 2
+              )
             ),
             prefixIcon: Icon(
                         Icons.email_outlined,
