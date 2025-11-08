@@ -21,7 +21,7 @@ class SplashScreen2 extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.amber,
               image: DecorationImage(
-                image: AssetImage("assets/images/pict 1.jpeg"),
+                image: AssetImage("assets/images/pict 2.jpeg"),
                 fit: BoxFit.cover,
                 ),
               ),
@@ -39,7 +39,7 @@ class SplashScreen2 extends StatelessWidget {
           SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
 
           Text(
-            "Level 21 Unlocked! - Ready to Win, Shine, and make it mine - .",
+            "Hello 21 - More goals, more growth, more glow - .",
               style: TextStyle(
                 fontSize: 15.0,
                 color: Colors.amber,
@@ -58,7 +58,7 @@ class SplashScreen2 extends StatelessWidget {
                     height: 10,
                     decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 242, 152, 8),
+                    color: Color.fromARGB(255, 117, 98, 57),
               ),
           ),
          
@@ -68,7 +68,7 @@ class SplashScreen2 extends StatelessWidget {
                     height: 10,
                     decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 117, 98, 57),
+                    color: Color.fromARGB(255, 242, 152, 8),
               ),
           ),
           SizedBox(width: 10),                  
