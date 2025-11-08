@@ -33,6 +33,17 @@ class SplashScreen1 extends StatelessWidget {
                 fontWeight: FontWeight.normal,
               )
               ),
+
+          SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
+
+          Text(
+            "Level 21 Unlocked! - Ready to Win, Shine, and make it mine - .",
+              style: TextStyle(
+                fontSize: 15.0,
+                color: Colors.amber,
+                fontWeight: FontWeight.bold,
+              )
+              ),
           //tambahan untuk widget lainnya
           ],
         ),
