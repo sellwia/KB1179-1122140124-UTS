@@ -10,9 +10,6 @@ class SplashScreen1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center, // vertikal tengah
           crossAxisAlignment: CrossAxisAlignment.center, // horizontal tengah
-          children: [
-            Wrap(
-            alignment: WrapAlignment.center, // tengah horizontal
             children: [
             SizedBox(height:50),
             Container (
@@ -27,11 +24,18 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ),
           ),
+
+          SizedBox(height: 20), //jarak 20 antara lingkaran dan teks
+
+          Text("Happy Birthday!",
+              style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.normal,
+              )
+              ),
           //tambahan untuk widget lainnya
           ],
         ),
-        ]
-      ),
       ),
     );
   }
