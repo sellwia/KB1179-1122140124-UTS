@@ -10,7 +10,15 @@ class Login extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(20.0),
           child: const Column(
-            children: [],
+            children: [
+              SizedBox(height: 10),
+              Icon(
+                Icons.lock_outline,
+                size: 80,
+                color: Colors.amber,
+              ),
+              SizedBox(height: 10),
+            ],
           ),
         ),
       ),
